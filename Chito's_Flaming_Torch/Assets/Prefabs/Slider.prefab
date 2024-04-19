@@ -90,10 +90,10 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2539276278513057244, guid: fe55fc1844e730e479ff4dd5417f057d,
+      - m_Target: {fileID: 4857832902627325201, guid: 52e40d6dc703d2b40bf72362daf1a1f9,
           type: 3}
-        m_TargetAssemblyTypeName: SetVolume, Assembly-CSharp
-        m_MethodName: SetBgmVolume
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: SetMusicVolume
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

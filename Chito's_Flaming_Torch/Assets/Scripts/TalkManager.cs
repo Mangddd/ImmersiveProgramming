@@ -1,62 +1,55 @@
-    using System.Collections;
-    using System.Collections.Generic;
-    using UnityEngine;
-    using UnityEngine.UI;
-    using TMPro;
-    using UnityEngine.XR.ARFoundation;
-    using UnityEngine.XR.ARSubsystems;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+using UnityEngine.XR.ARFoundation;
+using UnityEngine.XR.ARSubsystems;
 
 
-    public class TalkManager : MonoBehaviour
+public class TalkManager : MonoBehaviour
+{
+    public TMP_Text Message;
+    public Sprite[] sprites;
+    private int clickCount = 0;
+
+    private void Start()
     {
-        private bool touchPressed;
-        private Vector3 touchPosition;
-        public TMP_Text Message;
-        public Sprite[] sprites;
-        int clickCount = 0;
-
-
-        void Update()
-        {
-            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
-            {
-                touchPressed = true;
-                touchPosition = Input.GetTouch(0).position;
-            }
-
-
-        }
-
-        void FixedUpdate()
-        {
-
-            Ray ray = Camera.main.ScreenPointToRay(touchPosition);
-            RaycastHit hit;
-
-            if (touchPressed && Physics.Raycast(ray, out hit))
-            {
-
-                if (clickCount == 0)
-                {
-                    GameObject.Find("Character").GetComponent<Image>().sprite = sprites[0];
-                    Message.SetText("Hi");
-                    clickCount++;
-                }
-
-
-                else if (clickCount == 1)
-                {
-                    GameObject.Find("Character").GetComponent<Image>().sprite = sprites[1];
-                }
-
-
-
-                Debug.Log(clickCount);
-
-            }
-
-            touchPressed = false;
-
-        }
-
+        UpdateCharacterAndMessage();
     }
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            clickCount++;
+            UpdateCharacterAndMessage();
+        }
+    }
+
+    private void UpdateCharacterAndMessage()
+    {
+        switch (clickCount)
+        {
+            case 0:
+                SetCharacterAndMessage(sprites[0], "Hi! I'm Chito. Nice to meet you!");
+                break;
+            case 1:
+                SetCharacterAndMessage(sprites[1], "Hmm...Where's my friend Torch?\nI think he's hiding out on the campus of the Ajou University.");
+                break;
+            case 2:
+                Message.text = "Can you help me find my friend?";
+                break;
+            default:
+                clickCount = 0; // Reset clickCount if it exceeds the defined cases
+                SetCharacterAndMessage(sprites[0], "Hi! I'm Chito. Nice to meet you!");
+                break;
+        }
+    }
+
+    private void SetCharacterAndMessage(Sprite sprite, string message)
+    {
+        GameObject.Find("Character").GetComponent<Image>().sprite = sprite;
+        Message.text = message;
+    }
+}
