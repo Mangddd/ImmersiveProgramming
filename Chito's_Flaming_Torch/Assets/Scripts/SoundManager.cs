@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
+
     public static SoundManager instance;
-    public AudioSource BGMSource;
 
     private void Awake()
     {
@@ -19,4 +19,7 @@ public class SoundManager : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-}   
+
+
+
+}

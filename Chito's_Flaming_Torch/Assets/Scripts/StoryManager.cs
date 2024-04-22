@@ -37,7 +37,6 @@ public class StoryManager : MonoBehaviour
         // 현재 스토리 인덱스가 배열 범위를 벗어나면 종료
         if (currentStoryIndex >= storyMessages.Length)
         {
-            // 추가적인 처리나 다음 동작을 여기에 추가할 수 있습니다.
             Debug.Log("스토리 끝!");
             return;
         }
