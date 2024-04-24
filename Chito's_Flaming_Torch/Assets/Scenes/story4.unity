@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -286,7 +286,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 4ab7e65643b1fc34ab35fdce26258e2d,
+      objectReference: {fileID: 21300000, guid: 9f25e9f63435a3c4fa0e135e7a4b9219,
         type: 3}
     - target: {fileID: 6909552326416213190, guid: 263f15f18cd25a84c9ee06be6ffce1bd,
         type: 3}
@@ -302,7 +302,8 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6271819307492954673, guid: ff6b63e234d5b324f99cdb418f128444,
+        type: 3}
     - target: {fileID: 6909552326416213190, guid: 263f15f18cd25a84c9ee06be6ffce1bd,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -311,7 +312,17 @@ PrefabInstance:
     - target: {fileID: 6909552326416213190, guid: 263f15f18cd25a84c9ee06be6ffce1bd,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: GotoTitle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6909552326416213190, guid: 263f15f18cd25a84c9ee06be6ffce1bd,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ARSceneManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6909552326416213190, guid: 263f15f18cd25a84c9ee06be6ffce1bd,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1489,14 +1500,14 @@ MonoBehaviour:
   mapImage: {fileID: 0}
   nextButton: {fileID: 0}
   characterSprites:
-  - {fileID: 21300000, guid: cb9da490d6841fd4a9f36a9e8a61d5ff, type: 3}
-  - {fileID: 21300000, guid: 4dcf873a4bff0e34a9cfba0d1c83c5db, type: 3}
   - {fileID: 21300000, guid: 30cf621e64c77ad45a6005c4eb3cb751, type: 3}
+  - {fileID: 21300000, guid: 30cf621e64c77ad45a6005c4eb3cb751, type: 3}
+  - {fileID: 21300000, guid: 8004a017773ccf14194e43494d0f135f, type: 3}
   storyMessages:
-  - dddd
-  - Amazing!
-  - Chitto moved from place to place and you did a good job finding my friends thanks
-    to you!
+  - Amazing! I finally found my friend Torch!
+  - Thanks for finding my friend, and I hope you had a great time getting to know
+    the campus.
+  - See you!
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

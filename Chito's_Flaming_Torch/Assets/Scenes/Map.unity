@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -304,7 +304,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 4ab7e65643b1fc34ab35fdce26258e2d,
+      objectReference: {fileID: 21300000, guid: 9f25e9f63435a3c4fa0e135e7a4b9219,
         type: 3}
     - target: {fileID: 6909552326416213190, guid: 263f15f18cd25a84c9ee06be6ffce1bd,
         type: 3}
@@ -320,7 +320,8 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6271819307492954673, guid: ff6b63e234d5b324f99cdb418f128444,
+        type: 3}
     - target: {fileID: 6909552326416213190, guid: 263f15f18cd25a84c9ee06be6ffce1bd,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -329,7 +330,17 @@ PrefabInstance:
     - target: {fileID: 6909552326416213190, guid: 263f15f18cd25a84c9ee06be6ffce1bd,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: GotoTitle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6909552326416213190, guid: 263f15f18cd25a84c9ee06be6ffce1bd,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ARSceneManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6909552326416213190, guid: 263f15f18cd25a84c9ee06be6ffce1bd,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -410,8 +421,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -428,8 +439,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 2.4
-  m_fontSizeBase: 2.4
+  m_fontSize: 2.6
+  m_fontSizeBase: 2.6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -718,7 +729,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cb9da490d6841fd4a9f36a9e8a61d5ff, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 334a07593ae8aa342a04d431a147679f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1197,8 +1208,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a4ac72749b62b72489baf8f381b45a24, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: -4296635770777405670, guid: cc5f6e2feee99cd45aab44c10294cc50,
+    type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1651,25 +1663,23 @@ MonoBehaviour:
   mapImage: {fileID: 396569251}
   nextButton: {fileID: 2081369338}
   characterSprites:
+  - {fileID: 21300000, guid: 334a07593ae8aa342a04d431a147679f, type: 3}
+  - {fileID: 21300000, guid: 038f740aa28ec034f82712ac2920dbdb, type: 3}
+  - {fileID: 21300000, guid: 038f740aa28ec034f82712ac2920dbdb, type: 3}
   - {fileID: 21300000, guid: cb9da490d6841fd4a9f36a9e8a61d5ff, type: 3}
-  - {fileID: 21300000, guid: 4dcf873a4bff0e34a9cfba0d1c83c5db, type: 3}
-  - {fileID: 21300000, guid: 30cf621e64c77ad45a6005c4eb3cb751, type: 3}
   storyMessages:
   - Hi! I'm Chito. Nice to meet you!
   - Hmm...Where's my friend Torch? I think he's hiding out on the campus of the Ajou
     University.
   - Can you help me find my friend?
   - 'Let''s look at the map and go to the nearest pioneer statue from the front gate
-    of the school Press the button when you get to the front of the pioneer statue! '
+    of the school.  Press the button when you get to the front of the pioneer statue! '
   - 'The pioneer statue is a symbol of Ajou University,  '
-  - 'It expresses the image of a leader of this era with the motif of the spirit
-    of the old ancestors who expanded the country to the Heukryonggang River in the
-    past. '
-  - The torch held in the hands of the pioneer embodies the emblem of Ajou University
-    and represents the vision and passion of the leader! Then shall we look for the
-    torch?
-  - ' The torch will appear and disappear in a 360-degree space. You can get the
-    torch by touching it before it disappears Collect 3 torches within the time limit!'
+  - The statue symbolizes the vision and passion of the leader, and the torch means
+    "Let Ajou be the torch of Asia and the torch of the nations".
+  - Then shall we look for the torch?
+  - The torch will appear and disappear in a 360-degree space. You can get the torch
+    by touching it before it disappears Collect 3 torches within the time limit!
 --- !u!1 &2081369336
 GameObject:
   m_ObjectHideFlags: 0
@@ -1706,8 +1716,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -219.1, y: 1185.6}
-  m_SizeDelta: {x: 14.83762, y: 14.34593}
+  m_AnchoredPosition: {x: -206, y: 1185}
+  m_SizeDelta: {x: 14.6378, y: 14.5546}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2081369338
 MonoBehaviour:
@@ -1777,6 +1787,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6271819307492954673, guid: ff6b63e234d5b324f99cdb418f128444,
+          type: 3}
+        m_TargetAssemblyTypeName: ARSceneManager, Assembly-CSharp
+        m_MethodName: GotoScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Level1
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2081369339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1798,7 +1821,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -304,7 +304,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 4ab7e65643b1fc34ab35fdce26258e2d,
+      objectReference: {fileID: 21300000, guid: 9f25e9f63435a3c4fa0e135e7a4b9219,
         type: 3}
     - target: {fileID: 6909552326416213190, guid: 263f15f18cd25a84c9ee06be6ffce1bd,
         type: 3}
@@ -399,9 +399,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'connecting
+  m_text: 'Student
 
-    square'
+    Center'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -410,8 +410,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -428,8 +428,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 2.4
-  m_fontSizeBase: 2.4
+  m_fontSize: 2.5
+  m_fontSizeBase: 2.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1651,14 +1651,19 @@ MonoBehaviour:
   mapImage: {fileID: 396569251}
   nextButton: {fileID: 2081369338}
   characterSprites:
-  - {fileID: 21300000, guid: cb9da490d6841fd4a9f36a9e8a61d5ff, type: 3}
-  - {fileID: 21300000, guid: 4dcf873a4bff0e34a9cfba0d1c83c5db, type: 3}
   - {fileID: 21300000, guid: 30cf621e64c77ad45a6005c4eb3cb751, type: 3}
+  - {fileID: 21300000, guid: 4dcf873a4bff0e34a9cfba0d1c83c5db, type: 3}
+  - {fileID: 21300000, guid: f4b5e89045573aa4abd687e1bba9d27d, type: 3}
+  - {fileID: 21300000, guid: f4b5e89045573aa4abd687e1bba9d27d, type: 3}
+  - {fileID: 21300000, guid: f4b5e89045573aa4abd687e1bba9d27d, type: 3}
+  - {fileID: 21300000, guid: f4b5e89045573aa4abd687e1bba9d27d, type: 3}
+  - {fileID: 21300000, guid: f4b5e89045573aa4abd687e1bba9d27d, type: 3}
+  - {fileID: 21300000, guid: 561d9d449fb081d4e91937cefb272605, type: 3}
   storyMessages:
-  - 'Good! Next is the Cheeto sculpture in front of the student center '
-  - 'Connecting Square, created in 2021, is a convergence industry-academia cooperation
-    space that was created to provide an outdoor community where students can communicate
-    and interact with each other. '
+  - Good! Next is the Cheeto sculpture in front of the student center.
+  - Follow the red line to find the Studend Center
+  - 'The Connecting Square, built in 2021, was created to provide a community of
+    open spaces for students to connect and engage with each other. '
   - 'The front building is a new student center, which was completed in July 2007. '
   - It consists of one basement floor and four floors above the ground, and there
     is a comprehensive support center on the first floor.
@@ -1667,8 +1672,8 @@ MonoBehaviour:
   - '- B1 public practice room, club room - 1F University Job Center, Human Rights
     Center - 2F Health Clinic, Club Room - 3F college student conference room, club
     room - 4F Human Rights Center, Club Room'
-  - 'Find the torch again this time. This time, the number of torches is higher than
-    before, so it''s going to be hard! Fighting! '
+  - Try to find the torches again, but this time there are more of them than before,
+    so it's going to be harder... cheer up!
 --- !u!1 &2081369336
 GameObject:
   m_ObjectHideFlags: 0
@@ -1768,6 +1773,19 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6271819307492954673, guid: ff6b63e234d5b324f99cdb418f128444,
+          type: 3}
+        m_TargetAssemblyTypeName: ARSceneManager, Assembly-CSharp
+        m_MethodName: GotoScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

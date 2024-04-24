@@ -9,11 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Title.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/map.unity
+    path: Assets/Scenes/Map.unity
     guid: 352daf856828d9440a4d3231677bee92
   - enabled: 1
     path: Assets/Scenes/Info.unity
     guid: 2ee9cf23f4265094da5e508b42690bd1
+  - enabled: 1
+    path: Assets/Scenes/Setting.unity
+    guid: 20c2b2ceacb5f0a409c222fe51a714be
   m_configObjects:
     AR Foundation RemoteARFoundationRemoteLoaderSettings: {fileID: 11400000, guid: 2d4594b189d284e48ad25b795fdd45bc,
       type: 2}
