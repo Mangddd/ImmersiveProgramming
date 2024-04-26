@@ -170,11 +170,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiManager: {fileID: 1642788695}
+  uiManager2: {fileID: 0}
   audioManager: {fileID: 216459545}
   timerUIManager: {fileID: 1375499463}
-  timerText: {fileID: 0}
-  nextButton: {fileID: 2039804562}
-  restartButton: {fileID: 151056803}
+  timerText: {fileID: 1375499464}
 --- !u!65 &28764466
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -288,7 +287,7 @@ GameObject:
   - component: {fileID: 151056804}
   - component: {fileID: 151056803}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Button_tryagain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -705,6 +704,7 @@ MonoBehaviour:
   - {fileID: 1642788696}
   - {fileID: 1552344755}
   - {fileID: 448679140}
+  NextButton: {fileID: 2039804562}
 --- !u!114 &448679140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -856,11 +856,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiManager: {fileID: 1642788695}
+  uiManager2: {fileID: 0}
   audioManager: {fileID: 216459545}
   timerUIManager: {fileID: 1375499463}
-  timerText: {fileID: 0}
-  nextButton: {fileID: 2039804562}
-  restartButton: {fileID: 151056803}
+  timerText: {fileID: 1375499464}
 --- !u!65 &533871902
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1597,6 +1596,7 @@ MonoBehaviour:
   - {fileID: 1642788696}
   - {fileID: 1552344755}
   - {fileID: 448679140}
+  NextButton: {fileID: 2039804562}
 --- !u!222 &1552344757
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1678,6 +1678,7 @@ MonoBehaviour:
   - {fileID: 1642788696}
   - {fileID: 1552344755}
   - {fileID: 448679140}
+  NextButton: {fileID: 2039804562}
 --- !u!114 &1642788696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2050,7 +2051,7 @@ GameObject:
   - component: {fileID: 2039804563}
   - component: {fileID: 2039804562}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Button_next
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2218,11 +2219,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiManager: {fileID: 1642788695}
+  uiManager2: {fileID: 0}
   audioManager: {fileID: 216459545}
   timerUIManager: {fileID: 1375499463}
   timerText: {fileID: 0}
-  nextButton: {fileID: 2039804562}
-  restartButton: {fileID: 151056803}
 --- !u!65 &2111577581
 BoxCollider:
   m_ObjectHideFlags: 0
