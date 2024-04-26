@@ -1641,7 +1641,7 @@ MonoBehaviour:
   mapImage: {fileID: 0}
   nextButton: {fileID: 2081369338}
   characterSprites:
-  - {fileID: 21300000, guid: 627987dd028527e479a39207cb07175b, type: 3}
+  - {fileID: 21300000, guid: cca890fd1c44786469d5eb8732ec8743, type: 3}
   storyMessages:
   - It's okay! Should we do it again?
 --- !u!1 &2081369336
