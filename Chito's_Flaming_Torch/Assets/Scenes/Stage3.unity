@@ -159,7 +159,7 @@ MonoBehaviour:
   uiManager: {fileID: 0}
   uiManager2: {fileID: 2060233436}
   audioManager: {fileID: 216459545}
-  timerUIManager: {fileID: 0}
+  timerUIManager: {fileID: 1375499463}
   timerText: {fileID: 1375499464}
 --- !u!65 &28764466
 BoxCollider:

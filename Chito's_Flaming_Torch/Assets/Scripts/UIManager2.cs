@@ -12,7 +12,7 @@ public class UIManager2 : MonoBehaviour
     // 오브젝트가 터치될 때 호출되는 메서드
     public void UpdateHearts()
     {
-        NextButton.gameObject.SetActive(false);
+        NextButton.gameObject.SetActive(false); 
         if (currentHead < heads.Length)
         {
             heads[currentHead].color = Color.white; // 이미지 색상 변경
