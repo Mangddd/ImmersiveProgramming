@@ -9,6 +9,11 @@ public class TimeManager : MonoBehaviour
     public TimerUIManager timerUIManager; // TimerUIManager 참조
     public Button restartButton; // 게임 재시작 버튼
 
+    void Start()
+    {
+        restartButton.gameObject.SetActive(false); // 시작 시 버튼 비활성화
+    }
+
     void Update()
     {
         if (timeLeft > 0)
@@ -35,7 +40,6 @@ public class TimeManager : MonoBehaviour
     // 게임의 종료 조건을 처리하는 메서드
     private void GameEnd()
     {
-
-            restartButton.gameObject.SetActive(true); // 게임 재시작 버튼 활성화
+        restartButton.gameObject.SetActive(true); // 게임 재시작 버튼 활성화
     }
 }

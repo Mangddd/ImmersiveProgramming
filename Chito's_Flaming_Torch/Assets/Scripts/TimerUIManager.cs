@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TimerUIManager : MonoBehaviour
 {
@@ -17,10 +18,10 @@ public class TimerUIManager : MonoBehaviour
     public void ObjectTouched()
     {
         objectsTouched++;
-        if (objectsTouched >= totalObjects)
+        if (objectsTouched == totalObjects)
         {
             Debug.Log("All objects touched, game won!");
-            // 게임 승리 처리, 여기서 추가적인 승리 로직을 구현할 수 있습니다.
+            // 게임 승리 처리, 여기서 추가적인 승리 로직을 구현할 수 있습니다
         }
     }
 
