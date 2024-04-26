@@ -17,6 +17,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Setting.unity
     guid: 20c2b2ceacb5f0a409c222fe51a714be
+  - enabled: 1
+    path: Assets/Scenes/ImageMarker.unity
+    guid: eb4ece61787885d498b0fc99da10e12b
+  - enabled: 1
+    path: Assets/Scenes/story2.unity
+    guid: 549f1d5d420d3824891a9497762753e9
+  - enabled: 1
+    path: Assets/Scenes/story3.unity
+    guid: 3b61c8f4898441c43be1b2c6c165fc97
+  - enabled: 1
+    path: Assets/Scenes/story4.unity
+    guid: 4b2ed76a59c66804d8b29c97d5b77b86
   m_configObjects:
     AR Foundation RemoteARFoundationRemoteLoaderSettings: {fileID: 11400000, guid: 2d4594b189d284e48ad25b795fdd45bc,
       type: 2}
