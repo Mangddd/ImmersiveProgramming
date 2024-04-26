@@ -4,7 +4,7 @@ using TMPro;
 
 public class TimeManager : MonoBehaviour
 {
-    public float timeLeft = 20.0f; // 제한 시간
+    public float timeLeft = 30.0f; // 제한 시간
     public TextMeshProUGUI timerText; // TextMeshProUGUI 타입
     public TimerUIManager timerUIManager; // TimerUIManager 참조
     public Button restartButton; // 게임 재시작 버튼
