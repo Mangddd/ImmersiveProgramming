@@ -2036,6 +2036,7 @@ MonoBehaviour:
   timeLeft: 30
   timerText: {fileID: 1375499464}
   timerUIManager: {fileID: 1375499463}
+  restartButton: {fileID: 151056803}
 --- !u!1 &2039804560
 GameObject:
   m_ObjectHideFlags: 0
