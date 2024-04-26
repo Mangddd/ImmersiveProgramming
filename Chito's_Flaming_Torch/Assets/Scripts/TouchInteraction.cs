@@ -34,6 +34,7 @@ public class TouchInteraction : MonoBehaviour
                         {
                             // 오브젝트가 터치되었을 때 실행할 코드
                             audioManager?.PlaySound();
+                            uiManager?.UpdateHearts();
                             uiManager2?.UpdateHearts();
                             timerUIManager?.ObjectTouched();
                             

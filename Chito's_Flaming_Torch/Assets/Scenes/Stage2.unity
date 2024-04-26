@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiManager: {fileID: 0}
-  uiManager2: {fileID: 2060233437}
+  uiManager2: {fileID: 1300366691}
   audioManager: {fileID: 216459545}
   timerUIManager: {fileID: 1375499463}
   timerText: {fileID: 0}
@@ -858,7 +858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiManager: {fileID: 0}
-  uiManager2: {fileID: 2060233437}
+  uiManager2: {fileID: 1300366691}
   audioManager: {fileID: 216459545}
   timerUIManager: {fileID: 1375499463}
   timerText: {fileID: 0}
@@ -1532,6 +1532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeLeft: 30
+  NextButton: {fileID: 194630659}
 --- !u!114 &1375499464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2069,7 +2070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiManager: {fileID: 0}
-  uiManager2: {fileID: 2060233437}
+  uiManager2: {fileID: 1300366691}
   audioManager: {fileID: 216459545}
   timerUIManager: {fileID: 1375499463}
   timerText: {fileID: 0}
@@ -2568,7 +2569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiManager: {fileID: 0}
-  uiManager2: {fileID: 2060233437}
+  uiManager2: {fileID: 1300366691}
   audioManager: {fileID: 216459545}
   timerUIManager: {fileID: 1375499463}
   timerText: {fileID: 0}
@@ -2719,7 +2720,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiManager: {fileID: 0}
-  uiManager2: {fileID: 2060233437}
+  uiManager2: {fileID: 1300366691}
   audioManager: {fileID: 216459545}
   timerUIManager: {fileID: 1375499463}
   timerText: {fileID: 0}
