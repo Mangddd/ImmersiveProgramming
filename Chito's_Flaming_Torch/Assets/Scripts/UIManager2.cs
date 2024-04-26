@@ -23,6 +23,7 @@ public class UIManager2 : MonoBehaviour
         if (currentHead == 5)
         {
             NextButton.gameObject.SetActive(true); // 게임 재시작 버튼 활성화
+            currentHead = 0;
         }
     }
 
