@@ -169,9 +169,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53fe4a7b770f38e42a2b628e574714a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiManager: {fileID: 0}
+  uiManager: {fileID: 1642788695}
   audioManager: {fileID: 216459545}
-  timerUIManager: {fileID: 0}
+  timerUIManager: {fileID: 1375499463}
 --- !u!65 &28764466
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -549,7 +549,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 700, y: 1270}
+  m_AnchoredPosition: {x: 604, y: 1270}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &448679139
@@ -718,9 +718,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53fe4a7b770f38e42a2b628e574714a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiManager: {fileID: 0}
+  uiManager: {fileID: 448679139}
   audioManager: {fileID: 216459545}
-  timerUIManager: {fileID: 0}
+  timerUIManager: {fileID: 1375499463}
 --- !u!65 &533871902
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1343,7 +1343,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 550, y: 1270}
+  m_AnchoredPosition: {x: 454, y: 1270}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1642788693
@@ -1381,7 +1381,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 400, y: 1270}
+  m_AnchoredPosition: {x: 304, y: 1270}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1642788695
@@ -1669,7 +1669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53fe4a7b770f38e42a2b628e574714a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiManager: {fileID: 0}
+  uiManager: {fileID: 1552344756}
   audioManager: {fileID: 216459545}
   timerUIManager: {fileID: 0}
 --- !u!65 &2111577581

@@ -20,10 +20,11 @@ public class TimerManager : MonoBehaviour
         }
         else
         {
-            CheckGameOver();
+            Debug.Log("Time up! Game over!");
+           // CheckGameOver();
         }
     }
-
+    /*
     private void CheckGameOver()
     {
         if (timerUIManager.ObjectsTouched < 5)
@@ -32,4 +33,5 @@ public class TimerManager : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().name); // 게임 재시작
         }
     }
+    */
 }
