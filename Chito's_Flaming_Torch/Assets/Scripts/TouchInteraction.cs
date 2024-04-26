@@ -79,6 +79,6 @@ public class TouchInteraction : MonoBehaviour
             restartButton.gameObject.SetActive(true); // 게임 재시작 버튼 활성화
         }
         
-        timerUIManager.enabled = false; // 타이머 UI 매니저 비활성화
+      
     }
 }

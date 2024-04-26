@@ -7,6 +7,7 @@ public class TimeManager : MonoBehaviour
     public float timeLeft = 20.0f; // 제한 시간
     public TextMeshProUGUI timerText; // TextMeshProUGUI 타입
     public TimerUIManager timerUIManager; // TimerUIManager 참조
+    public Button restartButton; // 게임 재시작 버튼
 
     void Update()
     {
@@ -34,10 +35,7 @@ public class TimeManager : MonoBehaviour
     // 게임의 종료 조건을 처리하는 메서드
     private void GameEnd()
     {
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#else
-            Application.Quit();
-#endif
+
+            restartButton.gameObject.SetActive(true); // 게임 재시작 버튼 활성화
     }
 }
