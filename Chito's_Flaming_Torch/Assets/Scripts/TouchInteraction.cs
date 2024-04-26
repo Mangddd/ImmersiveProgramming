@@ -1,66 +1,84 @@
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class TouchInteraction : MonoBehaviour
 {
     public UIManager uiManager;       // UI 매니저 참조
     public AudioManager audioManager; // AudioManager 참조
     public TimerUIManager timerUIManager; // TimerUIManager 참조
+    public TextMeshProUGUI timerText; // TextMeshProUGUI 타입
+    public Button nextButton; // 다음 레벨로 넘어갈 버튼
+    public Button restartButton; // 게임 재시작 버튼
+
+    private int touchedObjectsCount = 0;  // 터치된 오브젝트 수
+    private bool gameEnded = false; // 게임 종료 여부
+
+    void Start()
+    {
+        // 시작 시 버튼들 비활성화
+        nextButton.gameObject.SetActive(false);
+        restartButton.gameObject.SetActive(false);
+    }
 
     void Update()
     {
-        if (Input.touchCount > 0)
+        if (!gameEnded)
         {
-            Touch touch = Input.GetTouch(0);
-            Debug.Log("Touch detected at position: " + touch.position);
-            if (touch.phase == TouchPhase.Began)
+            // 시간이 아직 남았다면
+            if (timerUIManager.timeLeft > 0)
             {
-                Ray ray = Camera.main.ScreenPointToRay(touch.position);
-                RaycastHit hit;
-
-                Debug.Log("Raycasting from camera at position: " + touch.position);
-                if (Physics.Raycast(ray, out hit))
+                if (Input.touchCount > 0)
                 {
-                    Debug.Log("Raycast hit: " + hit.collider.gameObject.name);
-                    // 오브젝트가 이 스크립트가 부착된 GameObject일 경우
-                    if (hit.collider.gameObject == gameObject)
+                    Touch touch = Input.GetTouch(0);
+                    if (touch.phase == TouchPhase.Began)
                     {
-                        Debug.Log("Touched object matches this script's object: " + gameObject.name);
+                        Ray ray = Camera.main.ScreenPointToRay(touch.position);
+                        RaycastHit hit;
+                        
+                        if (Physics.Raycast(ray, out hit) && hit.collider.gameObject == gameObject)
+                        {
+                            // 오브젝트가 터치되었을 때 실행할 코드
+                            audioManager?.PlaySound();
+                            uiManager?.UpdateHearts();
+                            timerUIManager?.ObjectTouched();
+                            touchedObjectsCount++;
 
-                        // 오브젝트가 터치되었을 때 실행할 코드
-                        if (audioManager != null)
-                        {
-                            audioManager.PlaySound();  // AudioManager를 통한 사운드 재생
-                            Debug.Log("Playing sound on: " + gameObject.name);
-                        }
-                        if (uiManager != null)
-                        {
-                            uiManager.UpdateHearts();  // UI 업데이트 호출
-                        }
-                        if (timerUIManager != null)
-                        {
-                            timerUIManager.ObjectTouched();  // TimerUIManager에 터치 알림
-                            CheckGameStatus();
-                        }
+                            Debug.Log("touchedObjectsCount : " + touchedObjectsCount);
+                            // 게임 승리 조건 체크
+                            if (touchedObjectsCount == 3)
+                            {
+                                Debug.Log("All objects touched, game won!");
+                                GameEnd(true); // 성공 시 다음 레벨로 넘어가는 버튼만 활성화
+                            }
 
-                        gameObject.SetActive(false);  // GameObject를 비활성화하여 사라지게 함
-                        Debug.Log("Deactivating object: " + gameObject.name);
+                            gameObject.SetActive(false); // 오브젝트 비활성화
+                        }
                     }
                 }
-                else
-                {
-                    Debug.Log("No hit detected");
-                }
+            }
+            else
+            {
+                // 시간이 다 되었을 때
+                GameEnd(false); // 실패 시 게임 재시작 버튼만 활성화
             }
         }
     }
 
-    // 게임의 승리 또는 패배 상태를 검사합니다.
-    private void CheckGameStatus()
+    // 게임의 종료 조건을 처리하는 메서드
+    private void GameEnd(bool success)
     {
-        if (timerUIManager.ObjectsTouched >= 5)
+       
+
+        if (success)
         {
-            // 승리 조건이 충족될 때의 추가 처리를 여기에 작성할 수 있습니다.
-            Debug.Log("All objects touched, game won!");
+            nextButton.gameObject.SetActive(true); // 다음 레벨로 넘어가는 버튼 활성화
         }
+        else
+        {
+            restartButton.gameObject.SetActive(true); // 게임 재시작 버튼 활성화
+        }
+        
+        timerUIManager.enabled = false; // 타이머 UI 매니저 비활성화
     }
 }

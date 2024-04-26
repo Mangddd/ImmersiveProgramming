@@ -1,14 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-using TMPro; 
+using TMPro;
 
-public class TimerManager : MonoBehaviour
+public class TimeManager : MonoBehaviour
 {
     public float timeLeft = 20.0f; // 제한 시간
-    public TextMeshProUGUI timerText; // TextMeshProUGUI 타입으로 변경
+    public TextMeshProUGUI timerText; // TextMeshProUGUI 타입
     public TimerUIManager timerUIManager; // TimerUIManager 참조
 
     void Update()
@@ -20,18 +17,27 @@ public class TimerManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("Time up! Game over!");
-           // CheckGameOver();
+            CheckGameOver();
+            timeLeft = 0; // 시간을 0으로 설정해 타이머가 음수로 가지 않도록 합니다.
         }
     }
-    /*
+
     private void CheckGameOver()
     {
         if (timerUIManager.ObjectsTouched < 5)
         {
             Debug.Log("Time up! Game over!");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name); // 게임 재시작
+            GameEnd();
         }
     }
-    */
+
+    // 게임의 종료 조건을 처리하는 메서드
+    private void GameEnd()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+            Application.Quit();
+#endif
+    }
 }

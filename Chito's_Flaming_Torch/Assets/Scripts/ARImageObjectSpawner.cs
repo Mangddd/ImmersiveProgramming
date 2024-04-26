@@ -74,7 +74,7 @@ public class ARImageObjectSpawner : MonoBehaviour
                         if (clickSound != null)
                         {
                             audioSource.PlayOneShot(clickSound);
-                            SceneManager.LoadScene("story4");
+                            SceneManager.LoadScene("stage2");
                         }
 
                     }
@@ -85,7 +85,7 @@ public class ARImageObjectSpawner : MonoBehaviour
                         if (clickSound != null)
                         {
                             audioSource.PlayOneShot(clickSound);
-                            SceneManager.LoadScene("story3");
+                            SceneManager.LoadScene("stage1");
                         }
 
                     }
@@ -96,7 +96,7 @@ public class ARImageObjectSpawner : MonoBehaviour
                         if (clickSound != null)
                         {
                             audioSource.PlayOneShot(clickSound);
-                            SceneManager.LoadScene("story2");
+                            SceneManager.LoadScene("stage3");
                         }
 
                     }

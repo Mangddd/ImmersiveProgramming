@@ -6,6 +6,12 @@ public class TimerUIManager : MonoBehaviour
 {
     private int totalObjects = 5; // 전체 터치해야 할 오브젝트 수
     private int objectsTouched = 0; // 현재까지 터치된 오브젝트 수
+    public float timeLeft = 30.0f; // 제한 시간
+
+    void Update()
+    {
+        timeLeft -= Time.deltaTime; // 시간 감소는 Update() 메서드에서 처리되어야 합니다.
+    }
 
     // 오브젝트가 터치될 때 호출되는 메서드
     public void ObjectTouched()
