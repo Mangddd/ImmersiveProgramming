@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 8342791550229305810}
   - component: {fileID: 3759414257477153278}
   m_Layer: 0
-  m_Name: Ajou
-  m_TagString: Ajou
+  m_Name: Final
+  m_TagString: Final
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -67,6 +67,7 @@ public class ARImageObjectSpawner : MonoBehaviour
                 {
                     // 충돌한 객체가 생성된 프리팹이면 해당 객체를 처리
                     GameObject touchedObject = hit.collider.gameObject;
+                    
                     if (touchedObject.CompareTag("Chito"))
                     {
                         // 생성된 프리팹이 터치되었음을 로그에 출력
@@ -78,7 +79,8 @@ public class ARImageObjectSpawner : MonoBehaviour
                         }
 
                     }
-                    if (touchedObject.CompareTag("Human"))
+                    
+                    if (touchedObject.CompareTag("Flame"))
                     {
                         // 생성된 프리팹이 터치되었음을 로그에 출력
                         Debug.Log("Spawned Prefab Touched: " + touchedObject.name);
@@ -89,7 +91,8 @@ public class ARImageObjectSpawner : MonoBehaviour
                         }
 
                     }
-                    if (touchedObject.CompareTag("Ajou"))
+                    
+                    if (touchedObject.CompareTag("Final"))
                     {
                         // 생성된 프리팹이 터치되었음을 로그에 출력
                         Debug.Log("Spawned Prefab Touched: " + touchedObject.name);
@@ -100,6 +103,7 @@ public class ARImageObjectSpawner : MonoBehaviour
                         }
 
                     }
+                    
                 }
             }
         }

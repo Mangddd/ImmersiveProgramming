@@ -236,38 +236,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabs:
-  - name: chito
-    prefab: {fileID: 156274016755685737, guid: 431e907add6221144a6f29d5661bf8a6, type: 3}
-  - name: ajou1
-    prefab: {fileID: 156274016755685737, guid: 3f9a73a2b7b1f8548890b2b71c25fab1, type: 3}
-  - name: ajou2
-    prefab: {fileID: 156274016755685737, guid: 3f9a73a2b7b1f8548890b2b71c25fab1, type: 3}
-  - name: ajou3
-    prefab: {fileID: 156274016755685737, guid: 3f9a73a2b7b1f8548890b2b71c25fab1, type: 3}
-  - name: ajou4
-    prefab: {fileID: 156274016755685737, guid: 3f9a73a2b7b1f8548890b2b71c25fab1, type: 3}
-  - name: ajou5
-    prefab: {fileID: 156274016755685737, guid: 3f9a73a2b7b1f8548890b2b71c25fab1, type: 3}
-  - name: human1
-    prefab: {fileID: 156274016755685737, guid: 08df9edc923b7404b86eeb50084c080a, type: 3}
-  - name: human2
-    prefab: {fileID: 156274016755685737, guid: 08df9edc923b7404b86eeb50084c080a, type: 3}
-  - name: human3
-    prefab: {fileID: 156274016755685737, guid: 08df9edc923b7404b86eeb50084c080a, type: 3}
-  - name: human4
-    prefab: {fileID: 156274016755685737, guid: 08df9edc923b7404b86eeb50084c080a, type: 3}
-  - name: human5
-    prefab: {fileID: 156274016755685737, guid: 08df9edc923b7404b86eeb50084c080a, type: 3}
-  - name: human6
-    prefab: {fileID: 156274016755685737, guid: 08df9edc923b7404b86eeb50084c080a, type: 3}
-  - name: human7
-    prefab: {fileID: 156274016755685737, guid: 08df9edc923b7404b86eeb50084c080a, type: 3}
-  - name: human8
-    prefab: {fileID: 156274016755685737, guid: 08df9edc923b7404b86eeb50084c080a, type: 3}
-  - name: human9
-    prefab: {fileID: 156274016755685737, guid: 08df9edc923b7404b86eeb50084c080a, type: 3}
   - name: flame
     prefab: {fileID: 156274016755685737, guid: 08df9edc923b7404b86eeb50084c080a, type: 3}
+  - name: chito
+    prefab: {fileID: 156274016755685737, guid: 431e907add6221144a6f29d5661bf8a6, type: 3}
+  - name: final
+    prefab: {fileID: 156274016755685737, guid: 3f9a73a2b7b1f8548890b2b71c25fab1, type: 3}
   clickSound: {fileID: 8300000, guid: a642ad57097b47d4ba7e2d3bfa85dbd0, type: 3}
 --- !u!114 &418749147
 MonoBehaviour:

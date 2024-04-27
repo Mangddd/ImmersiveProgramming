@@ -18,156 +18,6 @@ MonoBehaviour:
     m_Storage: []
   m_Images:
   - m_SerializedGuid:
-      m_GuidLow: 5217583430639105981
-      m_GuidHigh: 10350453907749447068
-    m_SerializedTextureGuid:
-      m_GuidLow: 4977841917324195749
-      m_GuidHigh: 5606919796021130074
-    m_Size: {x: 0.2, y: 0.16276455}
-    m_SpecifySize: 1
-    m_Name: chito
-    m_Texture: {fileID: 0}
-  - m_SerializedGuid:
-      m_GuidLow: 4632035386630755283
-      m_GuidHigh: 4120682859884220823
-    m_SerializedTextureGuid:
-      m_GuidLow: 9819072659522095217
-      m_GuidHigh: 2452490821677951049
-    m_Size: {x: 0.15, y: 0.2}
-    m_SpecifySize: 1
-    m_Name: human1
-    m_Texture: {fileID: 0}
-  - m_SerializedGuid:
-      m_GuidLow: 5695145368642597007
-      m_GuidHigh: 12611260596864992185
-    m_SerializedTextureGuid:
-      m_GuidLow: 9503872190685817681
-      m_GuidHigh: 5273533903434398843
-    m_Size: {x: 0.15, y: 0.2}
-    m_SpecifySize: 1
-    m_Name: human2
-    m_Texture: {fileID: 0}
-  - m_SerializedGuid:
-      m_GuidLow: 5457213931834432340
-      m_GuidHigh: 9397229432422273426
-    m_SerializedTextureGuid:
-      m_GuidLow: 17191416485624505156
-      m_GuidHigh: 1652961228814787656
-    m_Size: {x: 0.15, y: 0.2}
-    m_SpecifySize: 1
-    m_Name: human3
-    m_Texture: {fileID: 0}
-  - m_SerializedGuid:
-      m_GuidLow: 5076103402892469128
-      m_GuidHigh: 15248659421670984074
-    m_SerializedTextureGuid:
-      m_GuidLow: 13665293531794158901
-      m_GuidHigh: 15905331341772689819
-    m_Size: {x: 0.15, y: 0.2}
-    m_SpecifySize: 1
-    m_Name: human4
-    m_Texture: {fileID: 0}
-  - m_SerializedGuid:
-      m_GuidLow: 5622138608002990446
-      m_GuidHigh: 16681884832252648107
-    m_SerializedTextureGuid:
-      m_GuidLow: 13016744877425024126
-      m_GuidHigh: 13908883679143753546
-    m_Size: {x: 0.15, y: 0.2}
-    m_SpecifySize: 1
-    m_Name: human5
-    m_Texture: {fileID: 0}
-  - m_SerializedGuid:
-      m_GuidLow: 4944020016964350063
-      m_GuidHigh: 15820311842298342045
-    m_SerializedTextureGuid:
-      m_GuidLow: 16934761542066946575
-      m_GuidHigh: 10064089357171808330
-    m_Size: {x: 0.15, y: 0.2}
-    m_SpecifySize: 1
-    m_Name: human6
-    m_Texture: {fileID: 0}
-  - m_SerializedGuid:
-      m_GuidLow: 5503292182452719928
-      m_GuidHigh: 11102214701837848223
-    m_SerializedTextureGuid:
-      m_GuidLow: 13156168695778949299
-      m_GuidHigh: 8276290822047413033
-    m_Size: {x: 0.15, y: 0.2}
-    m_SpecifySize: 1
-    m_Name: human7
-    m_Texture: {fileID: 0}
-  - m_SerializedGuid:
-      m_GuidLow: 4692507039187187325
-      m_GuidHigh: 4001238847357612971
-    m_SerializedTextureGuid:
-      m_GuidLow: 3207899171144510199
-      m_GuidHigh: 15679053028494233915
-    m_Size: {x: 0.15, y: 0.2}
-    m_SpecifySize: 1
-    m_Name: human8
-    m_Texture: {fileID: 0}
-  - m_SerializedGuid:
-      m_GuidLow: 5124600246792808907
-      m_GuidHigh: 7136913384169570226
-    m_SerializedTextureGuid:
-      m_GuidLow: 6410020848055907049
-      m_GuidHigh: 821734800572307609
-    m_Size: {x: 0.15, y: 0.2}
-    m_SpecifySize: 1
-    m_Name: human9
-    m_Texture: {fileID: 0}
-  - m_SerializedGuid:
-      m_GuidLow: 4955347071581261041
-      m_GuidHigh: 16124235593379186604
-    m_SerializedTextureGuid:
-      m_GuidLow: 17777035280765485729
-      m_GuidHigh: 17949311452694158571
-    m_Size: {x: 0.15, y: 0.2}
-    m_SpecifySize: 1
-    m_Name: ajou1
-    m_Texture: {fileID: 0}
-  - m_SerializedGuid:
-      m_GuidLow: 5221937280874670583
-      m_GuidHigh: 10814018598850355109
-    m_SerializedTextureGuid:
-      m_GuidLow: 17907579760493391419
-      m_GuidHigh: 14263357388395268154
-    m_Size: {x: 0.15, y: 0.2}
-    m_SpecifySize: 1
-    m_Name: ajou2
-    m_Texture: {fileID: 0}
-  - m_SerializedGuid:
-      m_GuidLow: 5179209569518061441
-      m_GuidHigh: 10377445057440188048
-    m_SerializedTextureGuid:
-      m_GuidLow: 7720409733799965194
-      m_GuidHigh: 5694594721189220075
-    m_Size: {x: 0.15, y: 0.2}
-    m_SpecifySize: 1
-    m_Name: ajou3
-    m_Texture: {fileID: 0}
-  - m_SerializedGuid:
-      m_GuidLow: 5295213636752704592
-      m_GuidHigh: 15810747409269060740
-    m_SerializedTextureGuid:
-      m_GuidLow: 11156684535613862198
-      m_GuidHigh: 5250347261603657096
-    m_Size: {x: 0.15, y: 0.2}
-    m_SpecifySize: 1
-    m_Name: ajou4
-    m_Texture: {fileID: 0}
-  - m_SerializedGuid:
-      m_GuidLow: 4942862054707899015
-      m_GuidHigh: 6302946265931820952
-    m_SerializedTextureGuid:
-      m_GuidLow: 5765897662720019158
-      m_GuidHigh: 4292949141653163832
-    m_Size: {x: 0.15, y: 0.2}
-    m_SpecifySize: 1
-    m_Name: ajou5
-    m_Texture: {fileID: 0}
-  - m_SerializedGuid:
       m_GuidLow: 5391368571715727603
       m_GuidHigh: 10135019541395839160
     m_SerializedTextureGuid:
@@ -176,4 +26,24 @@ MonoBehaviour:
     m_Size: {x: 0.2, y: 0.2}
     m_SpecifySize: 1
     m_Name: flame
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5140779067817605734
+      m_GuidHigh: 9278703299080323753
+    m_SerializedTextureGuid:
+      m_GuidLow: 10670191060347283879
+      m_GuidHigh: 9399349468547002152
+    m_Size: {x: 0.2, y: 0.2}
+    m_SpecifySize: 1
+    m_Name: chito
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5050457746376318144
+      m_GuidHigh: 4929740605475312780
+    m_SerializedTextureGuid:
+      m_GuidLow: 13268906153694888993
+      m_GuidHigh: 6160517367541482826
+    m_Size: {x: 0.2, y: 0.2}
+    m_SpecifySize: 1
+    m_Name: final
     m_Texture: {fileID: 0}

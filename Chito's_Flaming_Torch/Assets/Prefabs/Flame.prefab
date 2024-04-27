@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 8342791550229305810}
   - component: {fileID: 3759414257477153278}
   m_Layer: 0
-  m_Name: Human
-  m_TagString: Human
+  m_Name: Flame
+  m_TagString: Flame
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

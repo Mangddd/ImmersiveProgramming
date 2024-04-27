@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - TalkPanel
+  - Chito
+  - Flame
+  - Final
   layers:
   - Default
   - TransparentFX
