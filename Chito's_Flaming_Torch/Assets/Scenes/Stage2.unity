@@ -1532,7 +1532,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeLeft: 30
-  NextButton: {fileID: 194630659}
 --- !u!114 &1375499464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2427,6 +2426,7 @@ MonoBehaviour:
   timerText: {fileID: 1375499464}
   timerUIManager: {fileID: 1375499463}
   restartButton: {fileID: 1639004864}
+  NextButton: {fileID: 194630659}
 --- !u!1 &2060233432
 GameObject:
   m_ObjectHideFlags: 0

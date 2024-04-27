@@ -8,10 +8,12 @@ public class TimeManager : MonoBehaviour
     public TextMeshProUGUI timerText; // TextMeshProUGUI 타입
     public TimerUIManager timerUIManager; // TimerUIManager 참조
     public Button restartButton; // 게임 재시작 버튼
+    public Button NextButton; // 게임 재시작 버튼
 
     void Start()
     {
         restartButton.gameObject.SetActive(false); // 시작 시 버튼 비활성화
+        NextButton.gameObject.SetActive(false);
     }
 
     void Update()
