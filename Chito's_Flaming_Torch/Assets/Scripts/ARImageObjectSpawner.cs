@@ -49,28 +49,28 @@ public class ARImageObjectSpawner : MonoBehaviour
     {
         if (Input.touchCount > 0)
         {
-            // 첫 번째 터치에 대해
+            // About the first touch
             Touch touch = Input.GetTouch(0);
 
-            // 터치의 상태가 Began(터치가 시작된 상태)이고, 터치가 발생한 위치에서 레이캐스트를 발사
+            // The state of the touch is Began (touch started state), and a raycast is fired from the location where the touch occurred.
             if (touch.phase == TouchPhase.Began)
             {
-                // 터치가 감지될 때 메시지를 출력합니다.
+                // A message is output when a touch is detected.
                 Debug.Log("Touch Detected at position: " + touch.position);
 
-                // 레이를 카메라에서 터치된 위치로 발사
+                // Fires a ray from the camera to the touched location.
                 Ray ray = Camera.main.ScreenPointToRay(touch.position);
                 RaycastHit hit;
 
-                // 레이캐스트가 충돌한 객체가 있는지 확인
+                // Raycast checks for collided objects
                 if (Physics.Raycast(ray, out hit))
                 {
-                    // 충돌한 객체가 생성된 프리팹이면 해당 객체를 처리
+                    // If the collided object is a created prefab, the object is processed.
                     GameObject touchedObject = hit.collider.gameObject;
                     
                     if (touchedObject.CompareTag("Chito"))
                     {
-                        // 생성된 프리팹이 터치되었음을 로그에 출력
+                        // Print to the log that the created prefab has been touched
                         Debug.Log("Spawned Prefab Touched: " + touchedObject.name);
                         if (clickSound != null)
                         {
@@ -82,7 +82,7 @@ public class ARImageObjectSpawner : MonoBehaviour
                     
                     if (touchedObject.CompareTag("Flame"))
                     {
-                        // 생성된 프리팹이 터치되었음을 로그에 출력
+                        // Print to the log that the created prefab has been touched
                         Debug.Log("Spawned Prefab Touched: " + touchedObject.name);
                         if (clickSound != null)
                         {
@@ -94,7 +94,7 @@ public class ARImageObjectSpawner : MonoBehaviour
                     
                     if (touchedObject.CompareTag("Final"))
                     {
-                        // 생성된 프리팹이 터치되었음을 로그에 출력
+                        // Print to the log that the created prefab has been touched
                         Debug.Log("Spawned Prefab Touched: " + touchedObject.name);
                         if (clickSound != null)
                         {
