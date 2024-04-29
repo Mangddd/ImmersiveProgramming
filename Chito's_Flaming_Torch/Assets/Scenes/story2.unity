@@ -1672,7 +1672,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f4b5e89045573aa4abd687e1bba9d27d, type: 3}
   - {fileID: 21300000, guid: 561d9d449fb081d4e91937cefb272605, type: 3}
   storyMessages:
-  - Good! Next is the Cheeto sculpture in front of the student center.
+  - Good! Next is the Chito sculpture in front of the student center.
   - Follow the red line to find the Studend Center
   - 'The Connecting Square, built in 2021, was created to provide a community of
     open spaces for students to connect and engage with each other. '
@@ -1684,7 +1684,7 @@ MonoBehaviour:
   - '- B1 public practice room, club room - 1F University Job Center, Human Rights
     Center - 2F Health Clinic, Club Room - 3F college student conference room, club
     room - 4F Human Rights Center, Club Room'
-  - Try to find the torches again, but this time there are more of them than before,
+  - Try to find the Flames again, but this time there are more of them than before,
     so it's going to be harder... cheer up!
 --- !u!1 &2081369336
 GameObject:

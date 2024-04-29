@@ -1674,7 +1674,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: cb9da490d6841fd4a9f36a9e8a61d5ff, type: 3}
   storyMessages:
   - Hi! I'm Chito. Nice to meet you!
-  - Hmm...Where's my friend Torch? I think he's hiding out on the campus of the Ajou
+  - Hmm...Where's my friend Flame? I think he's hiding out on the campus of the Ajou
     University.
   - Can you help me find my friend?
   - 'Let''s look at the map and go to the nearest pioneer statue from the front gate
@@ -1682,8 +1682,8 @@ MonoBehaviour:
   - 'The pioneer statue is a symbol of Ajou University,  '
   - The statue symbolizes the vision and passion of the leader, and the torch means
     "Let Ajou be the torch of Asia and the torch of the nations".
-  - Then shall we look for the torch?
-  - The torch will appear and disappear in a 360-degree space. You can get the torch
+  - Then shall we look for the Flame?
+  - The Flame will appear and disappear in a 360-degree space. You can get the torch
     by touching it before it disappears Collect 3 torches within the time limit!
   - Please scan the pioneer statue first.
 --- !u!1 &2081369336
