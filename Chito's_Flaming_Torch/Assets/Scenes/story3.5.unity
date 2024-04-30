@@ -1644,7 +1644,7 @@ MonoBehaviour:
   characterSprites:
   - {fileID: 21300000, guid: fa6b738d8d7b3f942944cbd559218e95, type: 3}
   storyMessages:
-  - Should we do it one more time?
+  - Let's do it one more time!
 --- !u!1 &2081369336
 GameObject:
   m_ObjectHideFlags: 0

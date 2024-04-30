@@ -1645,7 +1645,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a3e658e48a0f34146938f4efe12e35f0, type: 3}
   - {fileID: 21300000, guid: a3e658e48a0f34146938f4efe12e35f0, type: 3}
   storyMessages:
-  - It's a shame! I think it'll be possible if I try a little bit.
+  - It's a shame! I think it'll be possible if I try one more time
   - ' Let''s cheer up a little bit more'
 --- !u!1 &2081369336
 GameObject:

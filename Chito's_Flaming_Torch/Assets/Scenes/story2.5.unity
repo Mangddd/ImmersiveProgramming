@@ -1644,7 +1644,7 @@ MonoBehaviour:
   characterSprites:
   - {fileID: 21300000, guid: cca890fd1c44786469d5eb8732ec8743, type: 3}
   storyMessages:
-  - It's okay! Should we do it again?
+  - It's okay! Let's try again!
 --- !u!1 &2081369336
 GameObject:
   m_ObjectHideFlags: 0
