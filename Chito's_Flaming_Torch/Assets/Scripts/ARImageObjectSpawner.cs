@@ -15,18 +15,21 @@ public struct PlaceablePrefabs
 
 public class ARImageObjectSpawner : MonoBehaviour
 {
-
+    // Variable pointing to AR image tracking manager
     private ARTrackedImageManager imgManager;
-
+    // Array containing available prefabs
     public PlaceablePrefabs[] prefabs;
-
+    // Dictionary to manage created prefabs by name
     private Dictionary<string, GameObject> spawnedPrefabs = new Dictionary<string, GameObject>();
 
+    // Variable to store the audio source component
     private AudioSource audioSource;
+    // Audio clip that stores the click sound
     public AudioClip clickSound;
+
     void Start()
     {
-        // Get the AudioSource component on the same GameObject
+        // Get the AudioSource component from the game object this script is attached to.
         audioSource = GetComponent<AudioSource>();
     }
 
@@ -34,10 +37,10 @@ public class ARImageObjectSpawner : MonoBehaviour
     void Awake()
     {
         imgManager = GetComponent<ARTrackedImageManager>();
-
+        
+        // Loop through each pre in the prefabs array.
         foreach (PlaceablePrefabs prefab in prefabs)
         {
-            // instantiate the prefab and store to the dictionary
             GameObject instantiated = Instantiate(prefab.prefab, Vector3.zero, Quaternion.identity);
             instantiated.name = prefab.name;
             spawnedPrefabs.Add(instantiated.name, instantiated);
@@ -55,9 +58,6 @@ public class ARImageObjectSpawner : MonoBehaviour
             // The state of the touch is Began (touch started state), and a raycast is fired from the location where the touch occurred.
             if (touch.phase == TouchPhase.Began)
             {
-                // A message is output when a touch is detected.
-                Debug.Log("Touch Detected at position: " + touch.position);
-
                 // Fires a ray from the camera to the touched location.
                 Ray ray = Camera.main.ScreenPointToRay(touch.position);
                 RaycastHit hit;
@@ -67,11 +67,10 @@ public class ARImageObjectSpawner : MonoBehaviour
                 {
                     // If the collided object is a created prefab, the object is processed.
                     GameObject touchedObject = hit.collider.gameObject;
-                    
+
+                    // When you touch the Chito prefabricated structure, a sound is output and then switches to "stage2".
                     if (touchedObject.CompareTag("Chito"))
                     {
-                        // Print to the log that the created prefab has been touched
-                        Debug.Log("Spawned Prefab Touched: " + touchedObject.name);
                         if (clickSound != null)
                         {
                             audioSource.PlayOneShot(clickSound);
@@ -79,11 +78,9 @@ public class ARImageObjectSpawner : MonoBehaviour
                         }
 
                     }
-                    
+                    // When you touch the Flame prefabricated structure, a sound is output and then switches to "stage1".
                     if (touchedObject.CompareTag("Flame"))
-                    {
-                        // Print to the log that the created prefab has been touched
-                        Debug.Log("Spawned Prefab Touched: " + touchedObject.name);
+                    { 
                         if (clickSound != null)
                         {
                             audioSource.PlayOneShot(clickSound);
@@ -91,11 +88,9 @@ public class ARImageObjectSpawner : MonoBehaviour
                         }
 
                     }
-                    
+                    // When you touch the Final prefabricated structure, a sound is output and then switches to "stage3".
                     if (touchedObject.CompareTag("Final"))
                     {
-                        // Print to the log that the created prefab has been touched
-                        Debug.Log("Spawned Prefab Touched: " + touchedObject.name);
                         if (clickSound != null)
                         {
                             audioSource.PlayOneShot(clickSound);
@@ -109,12 +104,13 @@ public class ARImageObjectSpawner : MonoBehaviour
         }
     }
 
+    // Register the OnImageChanged method in the trackedImagesChanged event of the AR image tracking manager (imgManager).
     private void OnEnable()
     {
         imgManager.trackedImagesChanged += OnImageChanged;
     }
 
-    // unsubscribing from events
+    // Remove the OnImageChanged method registered in the trackedImagesChanged event.
     private void OnDisable()
     {
         imgManager.trackedImagesChanged -= OnImageChanged;
@@ -122,20 +118,21 @@ public class ARImageObjectSpawner : MonoBehaviour
 
     private void OnImageChanged(ARTrackedImagesChangedEventArgs args)
     {
-
+        // Process the added images.
         foreach (ARTrackedImage img in args.added)
         {
+            // Update the spawned (created as a prefab) object using the added image.
             UpdateSpawned(img);
         }
-
+        // Process updated images.
         foreach (ARTrackedImage img in args.updated)
         {
             UpdateSpawned(img);
         }
-
+        // Process the removed images.
         foreach (ARTrackedImage img in args.removed)
         {
-            // disable the prefab that has the same name than the image
+            // Disable the prefab with the same name as the removed image.
             spawnedPrefabs[img.referenceImage.name].SetActive(false);
         }
 
@@ -146,6 +143,7 @@ public class ARImageObjectSpawner : MonoBehaviour
     {
         string name = img.referenceImage.name;
 
+        // Get the prefab with that name from the dictionary.
         GameObject spawned = spawnedPrefabs[name];
 
         // only update when tracking state is good
